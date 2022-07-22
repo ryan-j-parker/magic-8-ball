@@ -14,6 +14,8 @@ const answerSection = document.getElementById('answer-section');
 const questionText = document.getElementById('question-text');
 const answerText = document.getElementById('answer-text');
 
+
+
 const answers = [
   'It is certain',
   'It is decidedly so',
@@ -48,4 +50,15 @@ askButton.addEventListener('click', () => {
   const randomAnswer = answers[randomNum];
   answerText.textContent = randomAnswer;
 });
+
+const greetingText = document.getElementById('greeting-text');
+
+const greetings = [
+  'Hello',
+  'Didn\'t know I was here, did you?',
+  'Clickety clickety!',
+  'Are you gonna click that mouse all day?',
+  'Ask me another question!',
+  '*scary ghost noises*'
+];
 

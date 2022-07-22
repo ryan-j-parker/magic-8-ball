@@ -114,13 +114,14 @@ label {
 
 #answer-text {
     font-size: .9rem;
-    text-shadow: -3px 1px 8px #5441ce;
+    text-shadow: 0px -3px 0px rgba(28, 17, 255, 0.6);
     color: white;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 0;
     margin-top: -200px;
+    font-family: 'Helvetica', sans-serif;
 }
 
 #eight-ball-image {
