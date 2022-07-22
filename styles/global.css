@@ -10,6 +10,8 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    color: black;
+    background-color: white;
 }
 
 header {
@@ -32,4 +34,73 @@ footer {
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+}
+
+.hidden {
+    display: none;
+}
+
+#banner {
+    width: 50%;
+    height: auto;
+    margin-left: 24%;
+    margin-right: 20%;
+}
+
+h1 {
+    font-size: 4em;
+    margin: 0;
+    text-align: center;
+}
+
+#question-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+label {
+    font-size: 2.5rem;
+    margin-bottom: 2%;
+}
+
+#ask-btn {
+    margin-top: 2%;
+    width: 50px;
+    height: 30px;
+}
+
+#eight-ball-image {
+
+}
+
+#question-text {
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#answer-text {
+    font-size: 1rem;
+    text-shadow: -3px 1px 8px #1A00CE;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 0;
+    margin-top: -200px;
+}
+
+#eight-ball-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    height: 120%;
+    width: 120%;
+    position: relative;
+    padding-right: 20%;
 }

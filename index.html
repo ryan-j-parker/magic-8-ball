@@ -6,7 +6,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="icon" type="image/x-icon" href="/assets/alchemy-favicon.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/8-Ball4.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -18,17 +18,26 @@
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <img src="/assets/magic-8-ball.png" alt="magic 8 ball banner" id="banner">
+        <!--<h1>Web App</h1>-->
     </header>
 
     <main>
-        <section id="user-question">
+       
 
 
+        <section id="question-section">
+        <label>What is your question?</label>
+        <textarea id="user-question"></textarea>
+        <button id="ask-btn">Ask</button>
         </section>
-        <section id="magic-answer">
+        <section id="answer-section" class="hidden">
+            
+            <p id="question-text"></p>
 
+            <div id="eight-ball-image"><img src="/assets/8-Ball4.png" id="8-ball" alt="a magic 8 ball" /></div>
+
+            <p id="answer-text">
             
         </section>
     </main>
