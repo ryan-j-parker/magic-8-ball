@@ -26,14 +26,16 @@ main {
     padding: 20px;
 }
 
+
 footer {
-    position: sticky;
     bottom: 0;
+    margin-top: %;
     padding: 7px 20px;
     font-size: .8em;
     display: flex;
     justify-content: flex-end;
     background-color: var(--footer-background);
+    position: fixed;
 }
 
 .hidden {
@@ -41,10 +43,12 @@ footer {
 }
 
 #banner {
-    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
     height: auto;
-    margin-left: 24%;
-    margin-right: 20%;
+    margin: 0 auto;
 }
 
 h1 {
@@ -53,23 +57,47 @@ h1 {
     text-align: center;
 }
 
+textarea {
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+
 #question-section {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    margin: 10px;
+    margin: 0 auto;
+    position: inherit;
 }
 
 label {
     font-size: 2.5rem;
     margin-bottom: 2%;
+    font-weight: bold;
 }
 
 #ask-btn {
     margin-top: 2%;
     width: 50px;
     height: 30px;
+    box-shadow: 2px 2px 0px 0px rgba(0, 0, 0, 0.8);
+}
+
+#ask-btn:hover {
+    background-color: #1f11b4;
+    color: white;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+
+#ask-btn:active {
+    background-color: #060044;
+    color: white;
+    transform: translateY(2px);
+    box-shadow: 0 0 0 0;
+    top: 2px;
+    left: 2px;
 }
 
 #eight-ball-image {
@@ -81,11 +109,12 @@ label {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-weight: 600;
 }
 
 #answer-text {
-    font-size: 1rem;
-    text-shadow: -3px 1px 8px #1A00CE;
+    font-size: .9rem;
+    text-shadow: -3px 1px 8px #5441ce;
     color: white;
     display: flex;
     justify-content: center;
